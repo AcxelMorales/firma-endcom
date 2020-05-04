@@ -1,0 +1,28 @@
+extends layout
+
+block content
+    .container
+        .row
+            .col-sm-6.col-sm-offset-3
+                div.text-center
+                    img(style='width: 200px; margin: 20px auto 0; @media (max-height: 345){margin-bottom: 5px;}', src='https://conecta.mx/img/Logo%20Conecta%20negro.png')
+                    h2 Generador de firmas
+                    h5 Ingresa los siguientes datos para generar tu firma.
+                form(method="post")
+                    .form-group
+                        label(for='nombre') Nombre
+                        input#nombre.form-control(type='text' required="required" placeholder='Nombre' name="nombre")
+                    .form-group
+                        label(for='puesto') Puesto
+                        input#puesto.form-control(type='text' required="required" placeholder='Puesto' name="puesto")
+                    .form-group
+                        label(for="celular") Celular
+                        input#celular.form-control(type="text" placeholder="5572111076" name="telefono")
+                    .form-group
+                        label(for='telefono1') Teléfono(s)
+                        input#telefono1.form-control(type='text' placeholder='+52(55) 6390 9940' name="movil1")
+                        input#telefono2.form-control(type='text' placeholder='+52(55) 5555 5555' name="movil2" style="margin-top: 10px")
+                    .form-group
+                        label(for='email') Correo electrónico
+                        input#email.form-control(type='email' required="required" placeholder='ejemplo@conecta.mx' name="email")
+                    button.btn.btn-primary(type='submit', style="margin-bottom: 1em;") Enviar
