@@ -37,9 +37,13 @@ module.exports.generate = function (req, res) {
         webshot(html, 'firma.jpg', {
           siteType: 'html',
           quality: 200,
+          screenSize: {
+            width: 490,
+            height: 320
+          },
           shotSize: {
             width: 490,
-            height: 1000,
+            height: 'all',
           }
         }, function (error) {
           if (error) console.log(error);
