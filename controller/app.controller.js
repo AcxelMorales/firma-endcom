@@ -41,7 +41,7 @@ module.exports.generate = function (req, res) {
           quality: 200,
           shotSize: {
             width: 490,
-            height: 280,
+            height: 300,
           }
         }, function (error) {
           if (error) console.log(error);
