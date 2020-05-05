@@ -5,9 +5,7 @@ const zip = require('node-zip')();
 const mime = require('mime');
 const webshot = require('webshot');
 
-module.exports.index = function (req, res) {
-  res.render('index');
-};
+module.exports.index = (req, res) => res.render('index');
 
 module.exports.check = function (req, res) {
   res.render('check', {
@@ -38,6 +36,7 @@ module.exports.generate = function (req, res) {
       try {
         webshot(html, 'firma.jpg', {
           siteType: 'html',
+          defaultWhiteBackground: true,
           quality: 200,
           shotSize: {
             width: 490,
