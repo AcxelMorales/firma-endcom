@@ -41,6 +41,7 @@ module.exports.generate = function (req, res) {
             width: 490,
             height: 300
           },
+          defaultWhiteBackground: true,
           shotSize: {
             width: 490,
             height: 'all',
