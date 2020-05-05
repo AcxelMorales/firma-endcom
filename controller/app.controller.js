@@ -40,7 +40,7 @@ module.exports.generate = function (req, res) {
           quality: 200,
           shotSize: {
             width: 490,
-            height: 420,
+            height: 'all',
           }
         }, function (error) {
           if (error) console.log(error);
