@@ -36,11 +36,10 @@ module.exports.generate = function (req, res) {
       try {
         webshot(html, 'firma.jpg', {
           siteType: 'html',
-          defaultWhiteBackground: true,
           quality: 200,
           shotSize: {
             width: 490,
-            height: 'all',
+            height: 1000,
           }
         }, function (error) {
           if (error) console.log(error);
