@@ -39,7 +39,7 @@ module.exports.generate = function (req, res) {
           quality: 200,
           screenSize: {
             width: 490,
-            height: 320
+            height: 300
           },
           shotSize: {
             width: 490,
