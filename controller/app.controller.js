@@ -38,12 +38,12 @@ module.exports.generate = function (req, res) {
           siteType: 'html',
           quality: 200,
           screenSize: {
-            width: 380,
+            width: 330,
             height: 300
           },
           defaultWhiteBackground: true,
           shotSize: {
-            width: 380,
+            width: 330,
             height: 'all',
           }
         }, function (error) {
